@@ -7,7 +7,7 @@ def main(page: ft.Page):
     page.window.resizable = False
     page.window.maximized = True
     page.padding = ft.padding.all(0)
-    page.bgcolor = ft.colors.GREEN_200
+    page.bgcolor = ft.colors.BLUE_300
 
     def logar(e: ft.ControlEvent):
         page.remove(register)
@@ -41,7 +41,7 @@ def main(page: ft.Page):
                         ft.Column(
                             controls=[
                                 ft.TextField(
-                                    hint_text='Digite seu email',
+                                    hint_text='write your email',
                                     prefix_icon=ft.icons.PERSON,
                                     text_vertical_align=-0.30,
                                     border=ft.InputBorder.UNDERLINE,
@@ -59,7 +59,7 @@ def main(page: ft.Page):
                                     )
                                 ),
                                 ft.TextField(
-                                    hint_text='Digite sa sua senha',
+                                    hint_text='write your password',
                                     prefix_icon=ft.icons.LOCK,
                                     text_vertical_align=-0.30,
                                     border=ft.InputBorder.UNDERLINE,
@@ -70,6 +70,8 @@ def main(page: ft.Page):
                                         weight='bold',
                                         color=ft.colors.with_opacity(0.4, ft.colors.BLACK)
                                     ),
+                                
+                                    
                                     text_style=ft.TextStyle(
                                         size=14,
                                         weight='bold',
